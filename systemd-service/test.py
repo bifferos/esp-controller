@@ -14,7 +14,7 @@ FILENAME = "testfile"
 DIR = "/var/lib/esp-controller"
 
 
-class TestUdpCatReplacementMissing(unittest.TestCase):
+class TestUdpServerFileMissing(unittest.TestCase):
     def setUp(self):
         # Ensure the file does not exist
         file_path = os.path.join(DIR, FILENAME)
@@ -39,7 +39,7 @@ class TestUdpCatReplacementMissing(unittest.TestCase):
         self.assertEqual(response, "false")
 
 
-class TestUdpCatReplacementExists(unittest.TestCase):
+class TestUdpServerFileExists(unittest.TestCase):
     def setUp(self):
         # Ensure the file does exist
         file_path = os.path.join(DIR, FILENAME)
