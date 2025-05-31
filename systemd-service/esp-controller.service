@@ -1,0 +1,11 @@
+[Unit]
+Description=ESP controller Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/socat -v UDP4-RECVFROM:6060,fork EXEC:'/usr/local/bin/esp-controller-check.sh'
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
