@@ -1,12 +1,10 @@
 
-esp-controller-arduino
-======================
+This project is in several components.
 
-ESP-01 sketch for querying a state from a server
+An ESP program to act as querying client
+A server for the ESP client
+A server for the web interface
 
-
-
-systemd-service
-===============
-
-socat-based UDP server that listens for connection queries.
+It allows a user to control the behaviour of a 
+connected ESP client via web interface on the local
+network.  There is absolutely no security!
