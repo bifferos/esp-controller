@@ -14,8 +14,14 @@
                 method: 'POST',
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                 body: 'name=' + encodeURIComponent(name) + '&checked=' + cb.checked
-            }).then(() => {
-                window.location = '/';
+            }).then(response => {
+                if (!response.ok) {
+                    response.text().then(msg => alert('Error: ' + msg));
+                } else {
+                    window.location = '/';
+                }
+            }).catch(error => {
+                alert('Network error: ' + error);
             });
         }
     </script>

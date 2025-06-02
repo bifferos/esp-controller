@@ -1,3 +1,0 @@
-; list of files to set via web interface.
-device1
-device2
