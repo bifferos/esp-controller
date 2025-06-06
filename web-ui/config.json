@@ -1,8 +1,0 @@
-{
-  "variableList": ["example-device1", "example-device2"],
-  "templatesDir": "./templates",
-  "staticDir": "./static",
-  "variableFilesDir": "./variables",
-  "tokenFilesDir": "./tokens",
-  "port": 6060
-}
