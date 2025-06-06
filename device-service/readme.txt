@@ -3,7 +3,7 @@ and get a response.  This relies on socat to do the
 heavy lifting.  Receives a packet with a query, responds 
 whether the given file exists or not.
 
-$ ./install.sh
+$ make install
 
 to install the service
 
