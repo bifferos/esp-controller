@@ -1,8 +1,7 @@
 Server for a simple udp client app to talk to a service
 and get a response.  This relies on socat to do the 
-heavy lifting.  Could have written it in Python but
-wanted it to be lower overhead as Proxmox memory is
-constrained and 'always on'.
+heavy lifting.  Receives a packet with a query, responds 
+whether the given file exists or not.
 
 $ ./install.sh
 

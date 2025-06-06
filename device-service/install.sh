@@ -22,8 +22,6 @@ sudo chmod 644 "$SYSTEMD_DIR/$SERVICE_FILE"
 sudo cp esp-controller-check.sh /usr/local/bin/.
 sudo chmod 755 /usr/local/bin/esp-controller-check.sh
 
-sudo mkdir -p /var/lib/esp-controller
-
 # Reload systemd to recognize new units
 sudo systemctl daemon-reload
 

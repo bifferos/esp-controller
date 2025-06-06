@@ -2,9 +2,9 @@
 # Read the filename from stdin (UDP packet)
 read -r filename
 
-# Check if the file exists in /var/lib/esp-controller
-if [ -n "$filename" ] && [ -e "/var/lib/esp-controller/$filename" ]; then
-  echo -n "true"
+# Check if the file exists in /var/lib/switchboard
+if [ -n "$filename" ] && [ -e "/var/lib/switchboard/$filename" ]; then
+  echo "true"
 else
-  echo -n "false"
+  echo "false"
 fi
